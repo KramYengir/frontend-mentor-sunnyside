@@ -1,12 +1,15 @@
 header {
-  min-height: 100vh;
+  position: relative;
+  min-height: 90vh;
+  width: min(100vw, 1440px);
   background: url("../../assets/images/mobile/image-header.jpg");
-  background-position: center;
+  background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 header nav {
+  position: relative;
   display: flex;
   justify-content: space-between;
 }
@@ -31,9 +34,9 @@ nav ul {
   align-items: center;
   gap: 1.5rem;
 
-  background: rgb(134, 134, 130);
+  background: var(--white);
   padding-block: 2rem;
-  width: 90%;
+  max-width: 90%;
 }
 
 nav ul.active {
@@ -41,17 +44,34 @@ nav ul.active {
   transform: translateX(-50%);
 }
 
+ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul li a {
+  color: var(--dark-grayish-blue);
+}
+
+ul li:last-child a {
+  color: var(--very-dark-desat-blue);
+  padding: 10px 30px;
+  background-color: var(--yellow);
+  border-radius: 20px;
+}
+
 header h1 {
   font-family: "Fraunces", serif;
   font-weight: 900;
-  font-size: calc(2rem + 3vw);
+  font-size: calc(2rem + 2vw + 1vh);
   text-transform: uppercase;
   text-wrap: balance;
   letter-spacing: 3px;
   color: var(--white);
 
   text-align: center;
-  padding-top: 150px;
+  padding-top: 25vh;
 }
 
 header img.arrow-down {
