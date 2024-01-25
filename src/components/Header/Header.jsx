@@ -1,6 +1,7 @@
 import "./Header.css";
 import logo from "../../assets/images/logo.svg";
 import hamburger from "../../assets/images/icon-hamburger.svg";
+import arrowDownImg from "../../assets/images/icon-arrow-down.svg";
 import { useState } from "react";
 
 const Header = () => {
@@ -28,6 +29,8 @@ const Header = () => {
           </li>
         </ul>
       </nav>
+      <h1>We Are Creatives!</h1>
+      <img className="arrow-down" src={arrowDownImg} alt="" />
     </header>
   );
 };

@@ -1,14 +1,9 @@
-/* header > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  max-width: 100%;
-
-  z-index: -5;
-} */
-
 header {
+  min-height: 100vh;
   background: url("../../assets/images/mobile/image-header.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 header nav {
@@ -44,4 +39,23 @@ nav ul {
 nav ul.active {
   left: 50%;
   transform: translateX(-50%);
+}
+
+header h1 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: calc(2rem + 3vw);
+  text-transform: uppercase;
+  text-wrap: balance;
+  letter-spacing: 3px;
+  color: var(--white);
+
+  text-align: center;
+  padding-top: 150px;
+}
+
+header img.arrow-down {
+  display: block;
+  margin-inline: auto;
+  margin-block: 4rem;
 }
