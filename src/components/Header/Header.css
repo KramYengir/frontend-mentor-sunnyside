@@ -1,0 +1,47 @@
+/* header > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+
+  z-index: -5;
+} */
+
+header {
+  background: url("../../assets/images/mobile/image-header.jpg");
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav button {
+  background: transparent;
+  border: none;
+}
+
+nav ul * {
+  list-style: none;
+  text-decoration: none;
+}
+
+nav ul {
+  position: fixed;
+  top: 125px;
+  right: -100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+
+  background: rgb(134, 134, 130);
+  padding-block: 2rem;
+  width: 90%;
+}
+
+nav ul.active {
+  left: 50%;
+  transform: translateX(-50%);
+}
