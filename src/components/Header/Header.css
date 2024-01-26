@@ -1,6 +1,6 @@
 header {
   position: relative;
-  min-height: 90vh;
+  min-height: 100vh;
   width: min(100vw, 1440px);
   background: url("../../assets/images/mobile/image-header.jpg");
   background-position: top;
@@ -25,23 +25,34 @@ nav ul * {
 }
 
 nav ul {
-  position: fixed;
-  top: 125px;
-  right: -100%;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
 
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
+  gap: 2rem;
 
   background: var(--white);
   padding-block: 2rem;
-  max-width: 90%;
+  width: 100%;
 }
 
 nav ul.active {
-  left: 50%;
-  transform: translateX(-50%);
+  display: flex;
+}
+
+nav ul.active::after {
+  content: "";
+  background-color: var(--white);
+  position: absolute;
+  top: -20px;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  transform: skewY(-45deg);
 }
 
 ul li {
