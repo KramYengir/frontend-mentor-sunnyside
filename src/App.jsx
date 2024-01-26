@@ -1,6 +1,5 @@
 import Header from "./components/Header/Header";
-import Banner from "./components/Banner/Banner";
-import Grid from "./components/Grid/Grid";
+import Articles from "./components/Articles/Articles";
 import Testimonials from "./components/Testimonials/Testimonials";
 import Footer from "./components/Footer/Footer";
 
@@ -8,8 +7,7 @@ const App = () => {
   return (
     <div>
       <Header />
-      <Banner />
-      <Grid />
+      <Articles />
       <Testimonials />
       <Footer />
     </div>
