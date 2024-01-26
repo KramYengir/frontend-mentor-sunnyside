@@ -1,0 +1,46 @@
+.testimonials-section {
+  text-align: center;
+}
+
+.testimonials-section h2 {
+  padding-block: 30px 60px;
+  font-family: "Fraunces", serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: var(--dark-grayish-blue);
+  letter-spacing: 2px;
+}
+
+.testimonials-section .testimonials {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.testimonial-card img {
+  max-width: 80px;
+  border-radius: 50%;
+}
+
+.testimonial-card .client-description {
+  color: var(--very-dark-grayish-blue);
+}
+
+.testimonial-card .client-name {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  color: var(--very-dark-desat-blue);
+  margin-bottom: 10px;
+}
+
+.testimonial-card .client-role {
+  color: var(--dark-grayish-blue);
+  margin-bottom: 15px;
+}
