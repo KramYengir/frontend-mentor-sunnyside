@@ -1,0 +1,30 @@
+.gallery-item {
+  width: 100%;
+  position: relative;
+}
+
+.gallery-item img {
+  max-width: 100%;
+  margin-bottom: -4px;
+}
+
+.gallery-item .info {
+  position: absolute;
+  bottom: 10%;
+  text-align: center;
+}
+
+.info h3 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: var(--dark-desat-cyan);
+}
+
+.info p {
+  line-height: 1.5;
+  color: var(--dark-desat-cyan);
+  padding-inline: 20px;
+  padding-top: 40px;
+  /* text-wrap: balance; */
+}
