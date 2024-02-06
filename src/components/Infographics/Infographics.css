@@ -1,14 +1,14 @@
-.gallery-item {
+.infographic-item {
   width: 100%;
   position: relative;
 }
 
-.gallery-item img {
+.infographic-item img {
   max-width: 100%;
   margin-bottom: -4px;
 }
 
-.gallery-item .info {
+.infographic-item .info {
   position: absolute;
   bottom: 10%;
   text-align: center;

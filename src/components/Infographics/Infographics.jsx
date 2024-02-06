@@ -1,12 +1,12 @@
-import "./Gallery.css";
+import "./Infographics.css";
 import cherryImg from "../../assets/images/mobile/image-graphic-design.jpg";
 import orangeImg from "../../assets/images/mobile/image-photography.jpg";
 
-const Gallery = () => {
+const Infographics = () => {
   return (
     <section>
       <h2 className="hidden-heading">Informative Gallery Section</h2>
-      <div className="gallery-item">
+      <div className="infographic-item">
         <img
           src={cherryImg}
           alt="Image of pair of cherries with cyan background"
@@ -20,7 +20,7 @@ const Gallery = () => {
           </p>
         </div>
       </div>
-      <div className="gallery-item">
+      <div className="infographic-item">
         <img src={orangeImg} alt="Image of an orange with blue background" />
         <div className="info">
           <h3>Photography</h3>
@@ -34,4 +34,4 @@ const Gallery = () => {
   );
 };
 
-export default Gallery;
+export default Infographics;
