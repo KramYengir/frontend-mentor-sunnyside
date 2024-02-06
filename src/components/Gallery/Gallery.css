@@ -1,0 +1,8 @@
+.gallery-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.gallery-section img {
+  max-width: 100%;
+}
