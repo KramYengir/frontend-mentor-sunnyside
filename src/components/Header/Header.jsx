@@ -17,7 +17,12 @@ const Header = () => {
   return (
     <header>
       <div className="container">
-        <nav role="navigation" aria-label="Main menu" aria-expanded={isActive}>
+        <nav
+          className="header-nav"
+          role="navigation"
+          aria-label="Main menu"
+          aria-expanded={isActive}
+        >
           <img src={logo} alt="Site Logo" />
           <button onClick={() => setIsActive(!isActive)}>
             <img src={hamburger} alt="Hamburger menu button" />

@@ -1,0 +1,40 @@
+footer {
+  background: rgb(152, 224, 202);
+  text-align: center;
+}
+
+footer h2 {
+  padding-block: 50px 20px;
+  color: var(--dark-moderate-cyan);
+  font-family: "Poppins", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 800;
+}
+
+footer svg {
+  fill: var(--dark-moderate-cyan);
+}
+
+footer nav {
+  padding-block: 20px 100px;
+}
+
+footer nav ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer nav ul li a {
+  color: var(--dark-moderate-cyan);
+  font-size: 1.2rem;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding-bottom: 80px;
+
+  font-size: 1.5rem;
+  list-style: none;
+}

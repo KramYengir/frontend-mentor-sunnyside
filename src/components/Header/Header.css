@@ -14,7 +14,7 @@ header nav {
   justify-content: space-between;
 }
 
-nav button {
+header nav button {
   background: transparent;
   border: none;
 }
@@ -24,7 +24,7 @@ nav ul * {
   text-decoration: none;
 }
 
-nav ul {
+header nav ul {
   position: absolute;
   top: 100px;
   left: 50%;
@@ -40,11 +40,11 @@ nav ul {
   width: 100%;
 }
 
-nav ul.active {
+header nav ul.active {
   display: flex;
 }
 
-nav ul.active::after {
+header nav ul.active::after {
   content: "";
   background-color: var(--white);
   position: absolute;
@@ -55,18 +55,18 @@ nav ul.active::after {
   transform: skewY(-45deg);
 }
 
-ul li {
+header ul li {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-ul li a {
+header ul li a {
   position: relative;
   color: var(--dark-grayish-blue);
 }
 
-ul li a.active::after {
+header ul li a.active::after {
   content: "";
   position: absolute;
   bottom: -2px;
@@ -77,7 +77,7 @@ ul li a.active::after {
   background-color: red;
 }
 
-ul li:last-child a {
+header ul li:last-child a {
   color: var(--very-dark-desat-blue);
   padding: 10px 30px;
   background-color: var(--yellow);
