@@ -23,7 +23,9 @@ const Header = () => {
           aria-label="Main menu"
           aria-expanded={isActive}
         >
-          <img src={logo} alt="Site Logo" />
+          <a href="#home" onClick={() => handleLinkClick("#home")}>
+            <img src={logo} alt="Site Logo" />
+          </a>
           <button onClick={() => setIsActive(!isActive)}>
             <img src={hamburger} alt="Hamburger menu button" />
           </button>
