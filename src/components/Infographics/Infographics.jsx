@@ -1,6 +1,8 @@
 import "./Infographics.css";
 import cherryImg from "../../assets/images/mobile/image-graphic-design.jpg";
+import cherryDesktopImg from "../../assets/images/desktop/image-graphic-design.jpg";
 import orangeImg from "../../assets/images/mobile/image-photography.jpg";
+import orangeDesktopImg from "../../assets/images/desktop/image-photography.jpg";
 
 const Infographics = () => {
   return (
@@ -9,6 +11,11 @@ const Infographics = () => {
       <div className="infographic-item">
         <img
           src={cherryImg}
+          alt="Image of pair of cherries with cyan background"
+        />
+        <img
+          className="desktop"
+          src={cherryDesktopImg}
           alt="Image of pair of cherries with cyan background"
         />
         <div className="info">
@@ -22,6 +29,11 @@ const Infographics = () => {
       </div>
       <div className="infographic-item">
         <img src={orangeImg} alt="Image of an orange with blue background" />
+        <img
+          className="desktop"
+          src={orangeDesktopImg}
+          alt="Image of an orange with blue background"
+        />
         <div className="info">
           <h3>Photography</h3>
           <p>

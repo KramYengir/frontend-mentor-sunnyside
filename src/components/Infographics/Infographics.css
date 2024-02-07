@@ -8,9 +8,13 @@
   margin-bottom: -4px;
 }
 
+.infographic-item img.desktop {
+  display: none;
+}
+
 .infographic-item .info {
   position: absolute;
-  bottom: 10%;
+  top: 60%;
   text-align: center;
 }
 
@@ -32,5 +36,22 @@
 @media screen and (min-width: 800px) {
   .infographics-section {
     display: flex;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  /* hide mobile image */
+  .infographic-item img {
+    display: none;
+  }
+
+  .infographic-item img.desktop {
+    display: flex;
+  }
+
+  .info p {
+    max-width: 70%;
+    margin-inline: auto;
+    padding-inline: 10%;
   }
 }
