@@ -1,6 +1,6 @@
 header {
   position: relative;
-  min-height: 100vh;
+  min-height: 800px;
   width: min(100vw, 1440px);
   background: url("../../assets/images/mobile/image-header.jpg");
   background-position: top;
@@ -90,18 +90,18 @@ header h1 {
   font-weight: 900;
   font-size: calc(2rem + 2vw + 1vh);
   text-transform: uppercase;
-  text-wrap: balance;
+  /* text-wrap: balance; */
   letter-spacing: 3px;
   color: var(--white);
 
   text-align: center;
-  padding-top: 25vh;
+  padding-top: 15vh;
 }
 
 header img.arrow-down {
   display: block;
   margin-inline: auto;
-  margin-block: 4rem;
+  margin-block: 100px 0;
 }
 
 @media screen and (min-width: 800px) {
@@ -153,6 +153,6 @@ header img.arrow-down {
 
   header h1 {
     text-wrap: none;
-    padding-top: 20vh;
+    padding-top: 10vh;
   }
 }

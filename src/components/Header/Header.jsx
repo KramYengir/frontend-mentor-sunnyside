@@ -68,9 +68,7 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-        <h1>
-          We Are <br /> Creatives!
-        </h1>
+        <h1>We Are Creatives!</h1>
         <img
           className="arrow-down"
           src={arrowDownImg}
