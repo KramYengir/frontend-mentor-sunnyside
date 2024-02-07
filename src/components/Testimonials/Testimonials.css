@@ -46,3 +46,26 @@
   color: var(--grayish-blue);
   margin-bottom: 15px;
 }
+
+@media screen and (min-width: 800px) {
+  .testimonials-section {
+    padding-bottom: 160px !important;
+  }
+
+  .testimonials-section h2 {
+    padding-block: 160px 100px;
+    font-size: 1.6rem;
+  }
+
+  .testimonials-section .testimonials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: initial;
+  }
+
+  .testimonial-card .client-description {
+    /* text-wrap: balance; */
+    max-width: 80%;
+  }
+}

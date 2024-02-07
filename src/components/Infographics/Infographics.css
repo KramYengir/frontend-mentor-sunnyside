@@ -28,24 +28,24 @@
 .info p {
   line-height: 1.5;
   color: var(--dark-desat-cyan);
-  padding-inline: 20px;
+  padding-inline: 10%;
   padding-top: 40px;
   /* text-wrap: balance; */
 }
 
-@media screen and (min-width: 800px) {
-  .infographics-section {
-    display: flex;
-  }
-}
-
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1200px) {
   /* hide mobile image */
   .infographic-item img {
     display: none;
   }
 
   .infographic-item img.desktop {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .infographics-section {
     display: flex;
   }
 
