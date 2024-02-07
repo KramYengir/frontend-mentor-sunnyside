@@ -4,7 +4,7 @@ import orangeImg from "../../assets/images/mobile/image-photography.jpg";
 
 const Infographics = () => {
   return (
-    <section>
+    <section className="infographics-section">
       <h2 className="hidden-heading">Informative Gallery Section</h2>
       <div className="infographic-item">
         <img

@@ -28,3 +28,9 @@
   padding-top: 40px;
   /* text-wrap: balance; */
 }
+
+@media screen and (min-width: 800px) {
+  .infographics-section {
+    display: flex;
+  }
+}

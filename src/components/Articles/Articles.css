@@ -3,6 +3,10 @@ article img {
   height: auto;
 }
 
+article .desktop-image {
+  display: none;
+}
+
 article .article-info {
   text-align: center;
   padding: 50px 30px;
@@ -47,4 +51,39 @@ article a.yellow::after {
 }
 article a.pink::after {
   background-color: var(--soft-red);
+}
+
+@media screen and (min-width: 800px) {
+  .articles-section {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .articles-section article {
+    display: flex;
+    align-items: center;
+  }
+
+  .articles-section article:first-of-type {
+    flex-direction: row-reverse;
+  }
+
+  .articles-section .article-info {
+    text-align: left;
+    padding-inline: 10%;
+  }
+
+  .article-info,
+  .desktop-image {
+    flex-basis: 50%;
+  }
+
+  /* swap to desktop images */
+  article .mobile-image {
+    display: none;
+  }
+
+  article .desktop-image {
+    display: flex;
+  }
 }

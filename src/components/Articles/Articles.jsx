@@ -1,16 +1,27 @@
 import "./Articles.css";
 import eggImg from "../../assets/images/mobile/image-transform.jpg";
+import eggDesktopImg from "../../assets/images/desktop/image-transform.jpg";
 import windeGlassImg from "../../assets/images/mobile/image-stand-out.jpg";
+import windeGlassDesktopImg from "../../assets/images/desktop/image-stand-out.jpg";
 
 const Articles = () => {
   return (
-    <section>
+    <section className="articles-section">
       <h2 className="hidden-heading">Information Articles Section</h2>
       <article>
-        <img
-          src={eggImg}
-          alt="Stylish image of an egg with yellow background"
-        />
+        <div className="mobile-image">
+          <img
+            src={eggImg}
+            alt="Stylish image of an egg with yellow background"
+          />
+        </div>
+        <div className="desktop-image">
+          <img
+            className="desktop"
+            src={eggDesktopImg}
+            alt="Stylish image of an egg with yellow background"
+          />
+        </div>
         <div className="article-info">
           <h3>Transform your brand</h3>
           <p>
@@ -24,7 +35,16 @@ const Articles = () => {
         </div>
       </article>
       <article>
-        <img src={windeGlassImg} alt="Pink tinted image of a wine glass" />
+        <div className="mobile-image">
+          <img src={windeGlassImg} alt="Pink tinted image of a wine glass" />
+        </div>
+        <div className="desktop-image">
+          <img
+            className="desktop"
+            src={windeGlassDesktopImg}
+            alt="Pink tinted image of a wine glass"
+          />
+        </div>
         <div className="article-info">
           <h3>Stand out to the right audience</h3>
           <p>
