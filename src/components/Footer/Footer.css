@@ -38,3 +38,11 @@ footer .social-icons {
   font-size: 1.5rem;
   list-style: none;
 }
+
+@media screen and (min-width: 800px) {
+  footer nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+  }
+}
