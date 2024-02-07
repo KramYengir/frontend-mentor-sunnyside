@@ -136,10 +136,19 @@ header img.arrow-down {
   header ul li a {
     color: var(--white);
   }
+  header ul li a:hover,
+  header ul li a:focus-visible {
+    color: var(--yellow);
+  }
 
   header ul li:last-child a {
     color: var(--very-dark-desat-blue);
     background-color: var(--white);
+  }
+  header ul li:last-child a:hover,
+  header ul li:last-child a:focus-visible {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.237);
   }
 
   header h1 {

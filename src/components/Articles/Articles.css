@@ -53,6 +53,11 @@ article a.pink::after {
   background-color: var(--soft-red);
 }
 
+article a:hover::after,
+article a:focus-visible:after {
+  opacity: 100%;
+}
+
 @media screen and (min-width: 800px) {
   .articles-section {
     display: grid;

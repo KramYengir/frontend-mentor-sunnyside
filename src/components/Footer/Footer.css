@@ -28,6 +28,13 @@ footer nav ul li a {
   color: var(--dark-moderate-cyan);
   font-size: 1.2rem;
 }
+footer nav ul li a:focus-visible,
+footer nav ul li a:hover,
+footer a:hover svg path,
+footer a:focus-visible svg path {
+  color: var(--white);
+  fill: white;
+}
 
 footer .social-icons {
   display: flex;
